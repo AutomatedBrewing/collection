@@ -1,0 +1,14 @@
+   text	   data	    bss	    dec	    hex	filename
+    444	      0	      0	    444	    1bc	collection.o (ex libcoll.a)
+    102	      0	      0	    102	     66	coll_utils.o (ex libcoll.a)
+    466	      0	  17028	  17494	   4456	coll_port_fs_mock.o (ex libcoll.a)
+     16	      0	      0	     16	     10	coll_port_mem_mock.o (ex libcoll.a)
+     76	      0	      8	     84	     54	coll_port_linked_list_mock.o (ex libcoll.a)
+    111	      0	      0	    111	     6f	coll_port_serializer_mock.o (ex libcoll.a)
+    220	      0	      0	    220	     dc	serializer_pet_decode.o (ex libcoll.a)
+    220	      0	      0	    220	     dc	serializer_pet_encode.o (ex libcoll.a)
+    474	      0	      0	    474	    1da	zcbor_common.o (ex libcoll.a)
+   2348	      0	      0	   2348	    92c	zcbor_decode.o (ex libcoll.a)
+    929	      0	      0	    929	    3a1	zcbor_encode.o (ex libcoll.a)
+   5406	      0	  17036	  22442	   57aa	(TOTALS)
+Max stack usage found for function: cbor_encode_Pet 144

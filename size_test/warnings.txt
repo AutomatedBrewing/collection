@@ -1,0 +1,97 @@
+In file included from ../ext/zcbor/zcbor/include/zcbor_decode.h:12,
+                 from ../utest/mock/serializer/serializer_pet_decode.c:11:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+In file included from ../ext/zcbor/zcbor/include/zcbor_encode.h:12,
+                 from ../utest/mock/serializer/serializer_pet_types.h:14,
+                 from ../utest/mock/coll_port_serializer_mock.h:15,
+                 from ../utest/mock/coll_port_serializer_mock.c:12:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+../utest/mock/serializer/serializer_pet_decode.c: In function 'cbor_decode_Pet':
+../utest/mock/serializer/serializer_pet_decode.c:40:14: warning: stack usage is 144 bytes [-Wstack-usage=]
+   40 | uint_fast8_t cbor_decode_Pet(
+      |              ^~~~~~~~~~~~~~~
+In file included from ../ext/zcbor/zcbor/include/zcbor_decode.h:12,
+                 from ../ext/zcbor/zcbor/src/zcbor_decode.c:11:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+In file included from ../ext/zcbor/zcbor/include/zcbor_encode.h:12,
+                 from ../utest/mock/serializer/serializer_pet_encode.c:11:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+../ext/zcbor/zcbor/src/zcbor_decode.c: In function 'str_overflow_check':
+../ext/zcbor/zcbor/src/zcbor_decode.c:284:25: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  284 |         if (result->len > (state->payload_end - state->payload)) {
+      |                         ^
+In file included from ../ext/zcbor/zcbor/include/zcbor_encode.h:12,
+                 from ../ext/zcbor/zcbor/src/zcbor_encode.c:11:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+../ext/zcbor/zcbor/src/zcbor_decode.c: In function 'zcbor_nil_expect':
+../ext/zcbor/zcbor/src/zcbor_decode.c:614:51: warning: unused parameter 'unused' [-Wunused-parameter]
+  614 | bool zcbor_nil_expect(zcbor_state_t *state, void *unused)
+      |                                             ~~~~~~^~~~~~
+../ext/zcbor/zcbor/src/zcbor_decode.c: In function 'zcbor_undefined_expect':
+../ext/zcbor/zcbor/src/zcbor_decode.c:623:57: warning: unused parameter 'unused' [-Wunused-parameter]
+  623 | bool zcbor_undefined_expect(zcbor_state_t *state, void *unused)
+      |                                                   ~~~~~~^~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c:14:1: warning: ISO C99 does not support '_Static_assert' [-Wpedantic]
+   14 | _Static_assert((sizeof(size_t) == sizeof(void *)),
+      | ^~~~~~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c: In function 'get_result':
+../ext/zcbor/zcbor/src/zcbor_encode.c:110:70: warning: unused parameter 'max_result_len' [-Wunused-parameter]
+  110 | static const void *get_result(const void *const input, uint_fast32_t max_result_len,
+      |                                                        ~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c:111:23: warning: unused parameter 'result_len' [-Wunused-parameter]
+  111 |         uint_fast32_t result_len)
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_decode.c: In function 'zcbor_any_skip':
+In file included from ../ext/zcbor/zcbor/src/zcbor_common.c:11:
+../ext/zcbor/zcbor/include/zcbor_common.h:86:2: warning: ISO C99 doesn't support unnamed structs/unions [-Wpedantic]
+   86 | };
+      |  ^
+../ext/zcbor/zcbor/src/zcbor_decode.c:795:35: warning: comparison of integer expressions of different signedness: 'uint_fast32_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  795 |                         if (value > (state->payload_end - state->payload)) {
+      |                                   ^
+../ext/zcbor/zcbor/src/zcbor_decode.c:738:49: warning: unused parameter 'result' [-Wunused-parameter]
+  738 | bool zcbor_any_skip(zcbor_state_t *state, void *result)
+      |                                           ~~~~~~^~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c: In function 'str_encode':
+../ext/zcbor/zcbor/src/zcbor_encode.c:310:24: warning: comparison of integer expressions of different signedness: 'size_t' {aka 'unsigned int'} and 'int' [-Wsign-compare]
+  310 |         if (input->len > (state->payload_end - state->payload)) {
+      |                        ^
+../ext/zcbor/zcbor/src/zcbor_common.c:13:1: warning: ISO C99 does not support '_Static_assert' [-Wpedantic]
+   13 | _Static_assert((sizeof(size_t) == sizeof(void *)),
+      | ^~~~~~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_common.c:16:1: warning: ISO C99 does not support '_Static_assert' [-Wpedantic]
+   16 | _Static_assert((sizeof(zcbor_state_t) >= sizeof(struct zcbor_state_constant)),
+      | ^~~~~~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c: In function 'list_map_start_encode':
+../ext/zcbor/zcbor/src/zcbor_encode.c:338:71: warning: unused parameter 'max_num' [-Wunused-parameter]
+  338 | static bool list_map_start_encode(zcbor_state_t *state, uint_fast32_t max_num,
+      |                                                         ~~~~~~~~~~~~~~^~~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c: In function 'list_map_end_encode':
+../ext/zcbor/zcbor/src/zcbor_encode.c:383:69: warning: unused parameter 'max_num' [-Wunused-parameter]
+  383 | static bool list_map_end_encode(zcbor_state_t *state, uint_fast32_t max_num,
+      |                                                       ~~~~~~~~~~~~~~^~~~~~~
+../ext/zcbor/zcbor/src/zcbor_encode.c:384:44: warning: unused parameter 'major_type' [-Wunused-parameter]
+  384 |                         zcbor_major_type_t major_type)
+      |                         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+../ext/zcbor/zcbor/src/zcbor_common.c: In function 'update_backups':
+../ext/zcbor/zcbor/src/zcbor_encode.c: In function 'zcbor_list_map_end_force_encode':
+../ext/zcbor/zcbor/src/zcbor_common.c:93:35: warning: comparison of integer expressions of different signedness: 'int' and 'uint_fast32_t' {aka 'unsigned int'} [-Wsign-compare]
+   93 |                 for (int i = 0; i < state->constant_state->current_backup; i++) {
+      |                                   ^
+../ext/zcbor/zcbor/src/zcbor_encode.c:440:53: warning: unused parameter 'state' [-Wunused-parameter]
+  440 | bool zcbor_list_map_end_force_encode(zcbor_state_t *state)
+      |                                      ~~~~~~~~~~~~~~~^~~~~
+../utest/mock/serializer/serializer_pet_encode.c: In function 'cbor_encode_Pet':
+../utest/mock/serializer/serializer_pet_encode.c:41:14: warning: stack usage is 144 bytes [-Wstack-usage=]
+   41 | uint_fast8_t cbor_encode_Pet(
+      |              ^~~~~~~~~~~~~~~
