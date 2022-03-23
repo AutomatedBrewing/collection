@@ -1,0 +1,6 @@
+[submodule "ext/zcbor/zcbor"]
+	path = ext/zcbor/zcbor
+	url = https://github.com/NordicSemiconductor/zcbor.git
+[submodule "ext/unity/Unity"]
+	path = ext/unity/Unity
+	url = https://github.com/ThrowTheSwitch/Unity.git
